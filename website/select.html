@@ -15,7 +15,10 @@
         <h1 class="centered big-logo">University of Florida</h1>
         <div class="centered search">
         <div id="professor-course-search">
-          <input class="typeahead search-bar" type="text" placeholder="Professor/Course Name">
+          <form action="professor_info.html" method="get">
+            <input name="name" class="typeahead search-bar" type="text" placeholder="Professor/Course Name">
+            <button hidden></button>
+          </form>
         </div>
       </div>
     </div>
@@ -27,5 +30,10 @@
   <script type="text/javascript" src="dist/typeahead.jquery.min.js"></script>
   <script type="text/javascript" src="scripts/auto_complete.js"></script>
   <script type="text/javascript" src="scripts/sexy_script.js"></script>
+  <script>
+    var univ = parseQuery(document.location.search).univ;
+    univ = univ.split("+").join(" ");
+    document.getElementsByClassName("big-logo")[0].innerHTML = univ;
+  </script>
   </body>
 </html>
