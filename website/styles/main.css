@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: "baloo tamma";
+}
+
+.bg {
+  background:#FF7F50;
+  background:black;
+  transition: background-color 1s ease;
+}
+
+#main {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+}
+
+.main-box {
+  margin-top: 250px;
+}
+
+.list-box {
+  width: 450px;
+}
+
+.list-box ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  font-size: 1.5em;
+}
+
+.list-box li {
+  margin: 10px 0;
+  padding: 15px 10px 10px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.big-logo {
+  text-align: center;
+  font-size: 4em;
+  margin: 0;
+}
+
+.search {
+  width: 450px;
+}
+
+.centered {
+  margin: 0 auto;
+}
+
+.search-bar {
+  padding-left: 20px;
+  background: #eee;
+  border:none;
+  width: 450px;
+  border-radius: 10px;
+  height: 60px;
+  font-size: 2em;
+  font-family: "baloo tamma";
+}
+
+.prof-image {
+  width: 5em;
+  height: 5em;
+  background: grey;
+  border-radius: 2.5em;
+}
+
+.tt-dropdown-menu {
+  background-color: #fff;
+  border: 1px solid #000;
+}
+.tt-suggestion.tt-cursor {
+  width: 100%;
+  background-color: #FFB06D;
+}
+.triggered-events {
+  float: right;
+  width: 500px;
+  height: 300px;
+}
+
+.names {
+  width: 100%;
+  border-bottom: 2px solid #fff;
+}
+
+.little-margin {
+  margin-top: 40px;
+}
+
+.review-title {
+  font-weight: lighter;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-box {
+    margin-top: 180px;
+  }
+
+  .search {
+    width: 80%;
+  }
+
+  .twitter-typeahead {
+    width: 100%;
+  }
+  .twitter-typeahead * {
+    width: 100%;
+  }
+
+  .big-logo {
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+  }
+
+  .search-bar {
+    font-size: 1.5em;
+  }
+
+  .list-box {
+    width: 80%;
+  }
+
+  .full-size {
+    width: 100%;
+  }
+
+  .white {
+    background:white;
+  }
+
+  .footer {
+    background:#FF7F50;
+    height: 80px;
+  }
+}
